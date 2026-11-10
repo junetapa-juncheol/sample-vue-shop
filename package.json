@@ -1,0 +1,39 @@
+{
+  "name": "sample-vue-shop",
+  "version": "1.0.0",
+  "private": true,
+  "author": "junetapa",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --mode development --host 127.0.0.1 --port 8080",
+    "build": "webpack --mode production",
+    "preview": "node scripts/preview.cjs",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:e2e": "start-server-and-test preview http://127.0.0.1:4174/sample-vue-shop/ \"cypress run --headless --browser chrome\""
+  },
+  "dependencies": {
+    "vue": "^3.5.45",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@vue/compiler-sfc": "^3.5.45",
+    "css-loader": "^7.1.0",
+    "cypress": "16.2.1",
+    "eslint": "^9.39.0",
+    "eslint-config-prettier": "^10.1.0",
+    "eslint-plugin-vue": "^10.12.1",
+    "globals": "^16.5.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "prettier": "^3.9.10",
+    "start-server-and-test": "^2.1.0",
+    "terser-webpack-plugin": "^5.3.0",
+    "vue-loader": "^17.4.2",
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.3.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
